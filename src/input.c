@@ -10,8 +10,8 @@ static void doKeyDown(SDL_KeyboardEvent *event) {
                 app.right = 1;
                 break;
             case SDL_SCANCODE_SPACE:
-                if (player.grounded) {
-                    player.dy = -15.0f;
+                if (player.grounded && player.x >= 0) {
+                    player.dy = -Y_MOVEMENT;
                     player.grounded = 0;
                 }
                 break;

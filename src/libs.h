@@ -9,6 +9,8 @@
 
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
+#define X_MOVEMENT 5.0f
+#define Y_MOVEMENT 8.0f
 
 // Estruturas
 typedef struct {
