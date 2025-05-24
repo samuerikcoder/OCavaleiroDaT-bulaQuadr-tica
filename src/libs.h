@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <SDL2/SDL_ttf.h>
 
 #define SCREEN_WIDTH 1280
 #define SCREEN_HEIGHT 720
@@ -42,10 +43,12 @@ extern int numPlatforms;
 void initSDL(void);
 void cleanup(void);
 void prepareScene(void);
+void prepareMenuScene(void);
 void doInput(void);
 void presentScene(void);
 SDL_Texture *loadTexture(const char *filename);
 void blit(SDL_Texture *texture, int x, int y);
 void drawPlatforms(void);
+void initGame(void);
 
 #endif

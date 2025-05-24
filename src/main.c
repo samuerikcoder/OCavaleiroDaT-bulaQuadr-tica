@@ -1,4 +1,5 @@
 #include "libs.h"
+#include "menu.h"
 
 extern Platform platforms[];
 extern int numPlatforms;
@@ -14,6 +15,9 @@ int main(void)
 
     initSDL();
     atexit(cleanup);
+
+    if (!showMenu())
+        return 0;
 
     player.texture = loadTexture("gfx/player.png");
     player.x = 100;

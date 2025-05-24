@@ -8,7 +8,7 @@ CC = gcc
 CFLAGS = -Wall -g -MMD
 
 # Bibliotecas
-LIBS = -lSDL2 -lSDL2_image
+LIBS = -lSDL2 -lSDL2_image -lSDL2_ttf
 
 # Fontes e objetos
 SRCS = $(wildcard *.c)
